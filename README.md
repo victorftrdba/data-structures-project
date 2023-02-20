@@ -14,6 +14,6 @@ Below has an image to represent how queues, stacks works.
 
 ## Additional
 
-I created a program to calculate a rectangle area and a circle circumference,
+I created a program to calculate the rectangle area and circle circumference,
 to run it you need to insert -lm in the end of the gcc command to load the
 math.h library
