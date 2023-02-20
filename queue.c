@@ -63,18 +63,27 @@ int dequeue(queue *q)
 
 int main()
 {
-    queue q1;
+    queue q1, q2;
 
     init_queue(&q1);
+    init_queue(&q2);
 
     enqueue(&q1, 1);
     enqueue(&q1, 2);
     enqueue(&q1, 3);
-    dequeue(&q1);
+
+    enqueue(&q2, 4);
+    enqueue(&q2, 5);
+    enqueue(&q2, 6);
 
     int t;
 
     while ((t = dequeue(&q1)) != QUEUE_EMPTY)
+    {
+        printf("%i \n", t);
+    }
+
+    while ((t = dequeue(&q2)) != QUEUE_EMPTY)
     {
         printf("%i \n", t);
     }
